@@ -230,11 +230,7 @@ Cell 3  →  Generate 768-dim embeddings → disaster_info_with_embeddings.csv
 
 > If `disaster_info_with_embeddings.csv` is already present and up to date, you can skip this step.
 
-### Step 2 — (Optional) Download CrisisFACTS messages
-
-Run **`dataset_download.ipynb`** to download social-media disaster messages. Requires an internet connection and `ir_datasets` credentials.
-
-### Step 3 — Run the RAG pipelines
+### Step 2 — Run the RAG pipelines
 
 Open **`chatbot_training.ipynb`** and run the cells sequentially.
 
@@ -293,12 +289,5 @@ CONSISTENCY_STOPWORDS = { "the", "a", "an", ... }
 
 | Notebook | Purpose |
 |---|---|
-| `dataset_download.ipynb` | Downloads CrisisFACTS event tweets via `ir_datasets` |
 | `dataset_generation.ipynb` | Cleans EM-DAT data, builds combined text, generates embeddings |
 | `chatbot_training.ipynb` | Two RAG pipelines: retrieval, summarization, and evaluation |
-
----
-
-## Academic Reference
-
-> Harinivas Srinivasan. *RAG-Enhanced Disaster Summarization: A Large Language Model Approach.* B.Tech Thesis, Vellore Institute of Technology, 2024–2025.
